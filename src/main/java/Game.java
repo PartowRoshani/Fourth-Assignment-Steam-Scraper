@@ -6,7 +6,9 @@ public class Game {
     private int price;
 
     public Game(String name, double rating, int price) {
-        //TODO
+        this.name = name;
+        this.rating = rating;
+        this.price = price;
 
     }
 
@@ -25,8 +27,11 @@ public class Game {
 
     @Override
     public String toString() {
-        //TODO
-        return "";
+
+        return "Game :\n" +
+                "Name : "+name+" \n"+
+                "Rating : "+rating+"\n"+
+                "Price : "+price;
     }
 
     @Override
